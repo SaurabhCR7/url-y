@@ -24,7 +24,7 @@ function App(props) {
 			);
 		} else {
 			axios
-				.post('http://localhost:3001/api/shorten', {
+				.post('https://link-ify.herokuapp.com/api/shorten', {
 					url: url
 				})
 				.then(res => {
