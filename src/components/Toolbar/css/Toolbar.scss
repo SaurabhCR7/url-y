@@ -1,0 +1,63 @@
+.toolbar {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: transparent;
+	height: 70px;
+	.toolbar_nav {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding: 0 1rem;
+	}
+	.toolbar_logo {
+		margin-left: 0.5rem;
+		p {
+			text-decoration: none;
+			font-size: 2rem;
+			color: #fff;
+			text-shadow: none;
+			transition: all 0.5s ease-in-out;
+			cursor: default;
+		}
+		span {
+			color: crimson;
+			text-shadow: none;
+		}
+	}
+	.spacer {
+		flex: 1;
+	}
+	.toolbar_nav_items {
+		a {
+			color: white;
+			text-decoration: none;
+			transition: all 0.5s ease-in-out;
+			border-bottom: 2px solid transparent;
+			padding-bottom: 3px;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		li {
+			padding: 0 0.5rem;
+			font-family: roboto;
+		}
+	}
+	.toolbar_nav_items a:hover {
+		border-bottom: 2px solid crimson;
+	}
+}
+
+$desktop: 840px;
+@media (max-width: #{$desktop}) {
+	.toolbar_nav_items {
+		display: none;
+	}
+}

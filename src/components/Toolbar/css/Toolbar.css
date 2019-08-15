@@ -1,0 +1,79 @@
+.toolbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  height: 70px;
+}
+
+.toolbar .toolbar_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.toolbar .toolbar_logo {
+  margin-left: 0.5rem;
+}
+
+.toolbar .toolbar_logo p {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: default;
+}
+
+.toolbar .toolbar_logo span {
+  color: crimson;
+  text-shadow: none;
+}
+
+.toolbar .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.toolbar .toolbar_nav_items a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+.toolbar .toolbar_nav_items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toolbar .toolbar_nav_items li {
+  padding: 0 0.5rem;
+  font-family: roboto;
+}
+
+.toolbar .toolbar_nav_items a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+@media (max-width: 840px) {
+  .toolbar_nav_items {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Toolbar.css.map */

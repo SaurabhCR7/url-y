@@ -1,0 +1,112 @@
+.App {
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main-logo {
+	margin: 0 auto;
+	font-size: 7rem;
+	font-weight: bolder;
+	color: white;
+	letter-spacing: 1px;
+	cursor: default;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.main-logo span {
+	color: crimson;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+		1px 1px 0 white;
+}
+form {
+	width: 400px;
+	height: 35px;
+	margin: 0 auto;
+	display: flex;
+}
+input {
+	width: 90%;
+	min-width: 230px;
+	height: 35px;
+	padding: 0px 0px 0px 10px;
+	border: none;
+}
+.submit-btn {
+	width: 20%;
+	min-width: 70px;
+	height: 35px;
+	padding: 0px;
+	margin: 0px;
+	background: rgb(255, 110, 108);
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+.link-main-container {
+	height: 20px;
+	display: flex;
+	margin: 0 auto;
+	width: 350px;
+}
+.link-container {
+	background-color: white;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid black;
+	width: 90%;
+	height: 20px;
+	margin: 0 auto;
+}
+.copy-btn {
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	height: 41px;
+	padding: 10px;
+	margin: 0;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	width: 50px;
+}
+.footer-container {
+	background-color: white;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.footer-content {
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 2px;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+@media screen and (max-width: 520px) {
+	.main-logo {
+		font-size: 5rem;
+	}
+	form {
+		width: 300px;
+	}
+	button {
+		font-size: 0.8rem;
+		width: 50px;
+	}
+	.link-main-container {
+		width: 280px;
+	}
+	.link-container {
+		width: 230px;
+	}
+	.copy-btn {
+		width: 50px;
+	}
+}
