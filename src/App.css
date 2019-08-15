@@ -52,7 +52,7 @@ input {
 	height: 20px;
 	display: flex;
 	margin: 0 auto;
-	width: 350px;
+	width: 450px;
 }
 .link-container {
 	background-color: white;
@@ -101,10 +101,12 @@ input {
 		width: 50px;
 	}
 	.link-main-container {
-		width: 280px;
+		width: 340px;
 	}
 	.link-container {
-		width: 230px;
+		width: 300px;
+		font-size: 0.8rem;
+		padding: 10px 5px 10px 5px;
 	}
 	.copy-btn {
 		width: 50px;

@@ -24,12 +24,12 @@ function App(props) {
 			);
 		} else {
 			axios
-				.post('https://link-ify.herokuapp.com/api/shorten', {
+				.post('https://link-ify.herokuapp.com/api/shorten/', {
 					url: url
 				})
 				.then(res => {
 					console.log(res.data.hash);
-					setLink(`https://link.ify/${res.data.hash}`);
+					setLink(`https://link-ify.herokuapp.com/${res.data.hash}`);
 				})
 				.catch(err => {
 					console.log(err);
