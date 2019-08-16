@@ -19,8 +19,13 @@ function App(props) {
 			require_protocol: true
 		});
 		if (!validUrl) {
-			alert(
-				'Please ensure that this URL is correct and incudes the http(s) protocol!'
+			props.enqueueSnackbar('Please ensure that this URL is correct and incudes the http(s) protocol!', {
+				variant: 'warning',
+				anchorOrigin: {
+					vertical: 'bottom',
+					horizontal: 'right'
+				}
+			}
 			);
 		} else {
 			axios
