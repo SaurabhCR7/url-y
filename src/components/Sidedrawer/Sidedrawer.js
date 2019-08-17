@@ -48,7 +48,7 @@ export default function SideDrawer() {
 					Github
 				</a>
 				<a
-					href='https://saurabh-chauhan.netlify.com/'
+					href='https://saurabh-chauhan.tk/'
 					style={{
 						color: 'black',
 						fontSize: '1.3rem',
