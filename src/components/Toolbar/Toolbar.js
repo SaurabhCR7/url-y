@@ -10,7 +10,7 @@ const toolbar = () => (
 			</div>
 			<div className='toolbar_logo'>
 				<p>
-					Link.<span>ify</span>
+					Url-y<span>.tk</span>
 				</p>
 			</div>
 			<div className='spacer' />
@@ -20,7 +20,7 @@ const toolbar = () => (
 						<a href='https://github.com/SaurabhCR7'>Github</a>
 					</li>
 					<li>
-						<a href='https://saurabh-chauhan.netlify.com/'>Contact</a>
+						<a href='https://saurabh-chauhan.tk/'>Contact</a>
 					</li>
 				</ul>
 			</div>

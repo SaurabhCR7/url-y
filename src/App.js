@@ -19,13 +19,15 @@ function App(props) {
 			require_protocol: true
 		});
 		if (!validUrl) {
-			props.enqueueSnackbar('Please ensure that this URL is correct and incudes the http(s) protocol!', {
-				variant: 'warning',
-				anchorOrigin: {
-					vertical: 'bottom',
-					horizontal: 'right'
+			props.enqueueSnackbar(
+				'Please ensure that this URL is correct and incudes the http(s) protocol!',
+				{
+					variant: 'warning',
+					anchorOrigin: {
+						vertical: 'bottom',
+						horizontal: 'right'
+					}
 				}
-			}
 			);
 		} else {
 			axios
@@ -51,7 +53,7 @@ function App(props) {
 			<br />
 			<br />
 			<h1 className='main-logo'>
-				Link.<span>ify</span>
+				Url-y<span>.tk</span>
 			</h1>
 			<br />
 			<br />
