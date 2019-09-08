@@ -31,12 +31,12 @@ function App(props) {
 			);
 		} else {
 			axios
-				.post('https://link-ify.herokuapp.com/api/shorten/', {
+				.post('http://www.url-y.ml/api/shorten/', {
 					url: url
 				})
 				.then(res => {
 					console.log(res.data.hash);
-					setLink(`https://link-ify.herokuapp.com/${res.data.hash}`);
+					setLink(`url-y.ml/${res.data.hash}`);
 				})
 				.catch(err => {
 					console.log(err);
@@ -72,9 +72,9 @@ function App(props) {
 			<br />
 			<br />
 			<div className='link-main-container'>
-				<p className='link-container' style={{ display: link ? '' : 'none' }}>
+				<a href={"https://www." + link} className='link-container' style={{ display: link ? '' : 'none' }}>
 					{link}
-				</p>
+				</a>
 				<br />
 				<CopyToClipboard
 					text={link}

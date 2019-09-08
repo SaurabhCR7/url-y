@@ -52,12 +52,13 @@ input {
 	height: 20px;
 	display: flex;
 	margin: 0 auto;
-	width: 450px;
+	width: 250px;
 }
 .link-container {
 	background-color: white;
 	padding: 10px 15px 10px 15px;
 	border: 1px solid black;
+	color: dodgerblue;
 	width: 90%;
 	height: 20px;
 	margin: 0 auto;
@@ -102,7 +103,7 @@ input {
 		width: 50px;
 	}
 	.link-main-container {
-		width: 340px;
+		width: 200px;
 	}
 	.link-container {
 		width: 300px;
