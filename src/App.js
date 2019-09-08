@@ -16,7 +16,7 @@ function App(props) {
 	const handleSubmit = e => {
 		e.preventDefault();
 		const validUrl = validator.isURL(url, {
-			require_protocol: true
+			require_protocol: true,
 		});
 		if (!validUrl) {
 			props.enqueueSnackbar(
@@ -25,14 +25,14 @@ function App(props) {
 					variant: 'warning',
 					anchorOrigin: {
 						vertical: 'bottom',
-						horizontal: 'right'
-					}
-				}
+						horizontal: 'right',
+					},
+				},
 			);
 		} else {
 			axios
 				.post('http://www.url-y.ml/api/shorten/', {
-					url: url
+					url: url,
 				})
 				.then(res => {
 					console.log(res.data.hash);
@@ -45,34 +45,37 @@ function App(props) {
 	};
 
 	return (
-		<div className='App'>
+		<div className="App">
 			<Toolbar />
 			<br />
 			<br />
 			<br />
 			<br />
 			<br />
-			<h1 className='main-logo'>
+			<h1 className="main-logo">
 				Url-y<span>.tk</span>
 			</h1>
 			<br />
 			<br />
 			<form onSubmit={handleSubmit}>
 				<input
-					type='text'
-					name='url'
-					placeholder='Enter URL with http(s) protocol'
+					type="text"
+					name="url"
+					placeholder="Enter URL with http(s) protocol"
 					onChange={handleUrl}
 				/>
-				<button type='submit' className='submit-btn'>
+				<button type="submit" className="submit-btn">
 					SUBMIT
 				</button>
 			</form>
 			<br />
 			<br />
 			<br />
-			<div className='link-main-container'>
-				<a href={link} className='link-container' style={{ display: link ? '' : 'none' }}>
+			<div className="link-main-container">
+				<a
+					href={'http://' + link}
+					className="link-container"
+					style={{ display: link ? '' : 'none' }}>
 					{link}
 				</a>
 				<br />
@@ -83,18 +86,18 @@ function App(props) {
 							variant: 'success',
 							anchorOrigin: {
 								vertical: 'bottom',
-								horizontal: 'right'
-							}
+								horizontal: 'right',
+							},
 						});
 					}}>
-					<button className='copy-btn' style={{ display: link ? '' : 'none' }}>
-						<i className='far fa-copy' />
+					<button className="copy-btn" style={{ display: link ? '' : 'none' }}>
+						<i className="far fa-copy" />
 					</button>
 				</CopyToClipboard>
 			</div>
-			<div className='footer-container'>
-				<p className='footer-content'>
-					Made With <i className='fas fa-heart' /> By Saurabh Chauhan
+			<div className="footer-container">
+				<p className="footer-content">
+					Made With <i className="fas fa-heart" /> By Saurabh Chauhan
 				</p>
 			</div>
 		</div>
