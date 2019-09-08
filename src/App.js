@@ -36,7 +36,7 @@ function App(props) {
 				})
 				.then(res => {
 					console.log(res.data.hash);
-					setLink(`url-y.ml/${res.data.hash}`);
+					setLink(`www.url-y.ml/${res.data.hash}`);
 				})
 				.catch(err => {
 					console.log(err);
@@ -72,7 +72,7 @@ function App(props) {
 			<br />
 			<br />
 			<div className='link-main-container'>
-				<a href={"https://www." + link} className='link-container' style={{ display: link ? '' : 'none' }}>
+				<a href={link} className='link-container' style={{ display: link ? '' : 'none' }}>
 					{link}
 				</a>
 				<br />
