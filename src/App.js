@@ -36,7 +36,7 @@ function App(props) {
 				})
 				.then(res => {
 					console.log(res.data.hash);
-					setLink(`www.url-y.ml/${res.data.hash}`);
+					setLink(`url-y.ml/${res.data.hash}`);
 				})
 				.catch(err => {
 					console.log(err);
@@ -73,14 +73,14 @@ function App(props) {
 			<br />
 			<div className="link-main-container">
 				<a
-					href={'http://' + link}
+					href={'http://www.' + link}
 					className="link-container"
 					style={{ display: link ? '' : 'none' }}>
 					{link}
 				</a>
 				<br />
 				<CopyToClipboard
-					text={link}
+					text={'www.' + link}
 					onCopy={() => {
 						props.enqueueSnackbar('Link copied to your clipboard!', {
 							variant: 'success',
