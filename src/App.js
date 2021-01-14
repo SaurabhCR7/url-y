@@ -31,7 +31,7 @@ function App(props) {
 			);
 		} else {
 			axios
-				.post('http://www.url-y.ml/api/shorten/', {
+				.post('www.url-y.ml/api/shorten/', {
 					url: url,
 				})
 				.then(res => {
@@ -73,7 +73,7 @@ function App(props) {
 			<br />
 			<div className="link-main-container">
 				<a
-					href={'http://www.' + link}
+					href={'www.' + link}
 					className="link-container"
 					style={{ display: link ? '' : 'none' }}>
 					{link}
