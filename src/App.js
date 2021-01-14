@@ -80,7 +80,7 @@ function App(props) {
 				</a>
 				<br />
 				<CopyToClipboard
-					text={'http://www.' + link}
+					text={'www.' + link}
 					onCopy={() => {
 						props.enqueueSnackbar('Link copied to your clipboard!', {
 							variant: 'success',
